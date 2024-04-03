@@ -1,0 +1,26 @@
+{
+    "version": "3.0.7",
+    "description": "Logic Design and Simulation",
+    "homepage": "https://similar.at/",
+    "licence": "unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://similar.at/download/Similar-3.0.7-amd64-qt6-Setup.exe",
+            "hash": "73ceaf5e88873969dd4d22157358f3ff69b09aef6358f6e5225255aeddbb049d"
+        }
+    },
+    "checkver": {
+        "url": "https://similar.at/",
+        "regex": "Similar ([\\d.]+)-amd64-qt6"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://similar.at/download/Similar-$version-amd64-qt6-Setup.exe"
+            },
+            "32bit": {
+                "url": "https://similar.at/download/Similar-$version-x86-Setup.exe"
+            }
+        }
+    }
+}
